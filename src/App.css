@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+/*리액트 화면의 색깔보고 설정하셈ㅋㅋ */
+/*ㅇㅋ???*/
+.calendar-body {
+  width: 900px;
+  height: 450px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.react-calendar__tile--now {
+  background-color: thistle;
+  width: 900px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react-calendar__month-view__weekdays__weekday {
+  background-color: yellow;
+  width: 85px;
+}
+.react-calendar__month-view__days {
+  background-color: yellowgreen;
+  height: 450px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button[type="button"] {
+  background-color: thistle;
+}
+.react-calendar__navigation button {
+  background-color: red;
+  justify-content: left;
 }
 
-.App-link {
-  color: #61dafb;
+abbr[aria-label^="2022년 3월"] {
+  font-size: 19px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-calendar {
+  width: 950px;
+  height: 450px;
+}
+button {
+  width: 50px;
+}
+abbr {
+  background-color: tomato;
+  width: 50px;
+}
+/* .react-calendar__tile {
+  margin: 0;
+  padding: 0;
+} */
+.react-calendar__navigation__arrow {
+  display: none;
 }
