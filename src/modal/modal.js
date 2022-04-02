@@ -1,7 +1,7 @@
 import React from "react";
 import "./modal.css";
 
-const Modal = (props) => {
+const Modal = (props, e) => {
   const { open, close, header } = props;
 
   return (

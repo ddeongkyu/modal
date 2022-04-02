@@ -2,33 +2,61 @@
 /*ㅇㅋ???*/
 .calendar-body {
   width: 900px;
-  height: 450px;
 }
-
+.react-calendar {
+  padding-left: 50px;
+  box-sizing: border-box;
+  border: none;
+  width: 900px;
+  height: 900px;
+}
 .react-calendar__tile--now {
   background-color: thistle;
   width: 900px;
 }
 
 .react-calendar__month-view__weekdays__weekday {
-  background-color: yellow;
+  /* background-image: url(./img/nolja_kuku.jpeg);
+  background-size: cover; */
   width: 85px;
+  height: 30px;
 }
 .react-calendar__month-view__days {
   background-color: yellowgreen;
-  height: 450px;
+  height: 600px;
 }
-
 button[type="button"] {
-  background-color: thistle;
+  background-image: url(./img/give_me.jpeg);
+  background-size: cover;
+}
+button[type="button"]:hover {
+  background-image: url(./img/notAChance.jpeg);
+  background-size: contain;
 }
 .react-calendar__navigation button {
-  background-color: red;
+  background-image: url(./img/cry.jpeg);
+  background-size: contain;
   justify-content: left;
 }
-
-abbr[aria-label^="2022년 3월"] {
-  font-size: 19px;
+abbr[aria-label^="2022년"] {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-size: 25px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+abbr[aria-label$="요일"] {
+  font-size: 30px;
 }
 .react-calendar {
   width: 950px;
@@ -38,8 +66,8 @@ button {
   width: 50px;
 }
 abbr {
-  background-color: tomato;
-  width: 50px;
+  background-color: none;
+  width: 20px;
 }
 /* .react-calendar__tile {
   margin: 0;
@@ -47,4 +75,10 @@ abbr {
 } */
 .react-calendar__navigation__arrow {
   display: none;
+}
+.react-calendar__navigation__label {
+  font-size: 40px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
