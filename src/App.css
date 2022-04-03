@@ -8,7 +8,7 @@
   box-sizing: border-box;
   border: none;
   width: 900px;
-  height: 900px;
+  height: 600px;
 }
 .react-calendar__tile--now {
   background-color: thistle;
@@ -23,7 +23,7 @@
 }
 .react-calendar__month-view__days {
   background-color: yellowgreen;
-  height: 600px;
+  height: 550px;
 }
 button[type="button"] {
   background-image: url(./img/give_me.jpeg);
